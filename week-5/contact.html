@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Evan's Gamer Lounge - Home</title>
+</head>
+
+<body>
+  <!-- Control + / or Command + / -->
+  <!-- This is a HTML comment -->
+  <!-- Site header -->
+  <header>
+    <h1>Evan's Gamer Lounge</h1>
+    <!-- Adding Navigation Tabs -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- page content -->
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Hours of Operation</th>
+        </tr>
+        <tr>
+          <th>Day</th>
+          <th>Hours</th>
+        </tr>
+        <tr>
+          <td>Monday-Friday</td>
+          <td>11am-11pm</td>
+        </tr>
+        <tr>
+          <td>Saturday-Sunday</td>
+          <td>12pm-2am</td>
+        </tr>
+      </thead>
+    </table>
+    <!-- Adding a form -->
+    <section>
+      <h2>Event Signup!</h2>
+      <form action="thanks.html" method="get">
+        <div>
+          <label for="fullname">Your Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+        </div>
+        <div>
+          <label for="youremail">Email</label>
+          <input type="email" name="youremail" id="youremail" placeholder="john.doe@gmail.com" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div>
+          <label for="tickets">How many tickets? (sold in pairs only)</label>
+          <input type="number" id="tickets" name="tickets" min="2" max="20" step="2">
+        </div>
+        <div>
+          <label for="eventname">Which event are you attending?</label>
+          <select id="eventname" name="eventname">
+            <option value="owtourney" selected>Overwatch Tournament</option>
+            <option value="lolwatch">League of Legends Watch Party</option>
+          </select>
+        </div>
+        <div>
+          <h3>Have you attended an event before?</h3>
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="attendance">
+          <label for="no">No</label>
+          <input type="radio" id="no" name="attendance">
+        </div>
+        <div>
+          <h3>If yes, how many events have you attended</h3>
+          <label for="few">1 or 2</label>
+          <input type="radio" id="few" name="pastevents">
+          <label for="some">3 to 5</label>
+          <input type="radio" id="some" name="pastevents">
+          <label for="lots">6+</label>
+          <input type="radio" id="lots" name="pastevents">
+        </div>
+        <div>
+          <h3>Policies</h3>
+          <input type="checkbox" name="policies" id="policies" required>
+          <label for="policies">I agree with the Terms and Policies</label>
+        </div>
+        <button type="submit">Sign me up!</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <!-- HTML Entity -->
+    Copyright &copy; Evan&apos;s Gamer Lounge, 2020
+  </footer>
+</body>
+
+</html>
