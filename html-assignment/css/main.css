@@ -18,9 +18,6 @@ header, footer {
 .squarepoints :nth-child(odd) {
   background-color: lightgreen;
 }
-.squarepoints :nth-child(even) {
-  background-color: lightpink;
-}
 nav ul {
   list-style: none;
 }
