@@ -9,11 +9,26 @@ header, footer {
   color: blueviolet;
 }
 #my-image {
-  box-shadow: black;
+  /* Horizontal Vertical Blur Spread Colour */
+  box-shadow: 0px 0px 2px 1px black; 
 }
 .squarepoints {
   list-style: square;
 }
+.squarepoints :nth-child(odd) {
+  background-color: lightgreen;
+}
+.squarepoints :nth-child(even) {
+  background-color: lightpink;
+}
 nav ul {
   list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  border: 1px solid black;
+  background-color: yellow
+}
+nav ul a:hover {
+  background-color: orange;
 }
