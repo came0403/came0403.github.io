@@ -1,0 +1,19 @@
+body {
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+header, footer {
+  background-color: peachpuff;
+}
+.site-title {
+  color: blueviolet;
+}
+#my-image {
+  box-shadow: black;
+}
+.squarepoints {
+  list-style: square;
+}
+nav ul {
+  list-style: none;
+}
