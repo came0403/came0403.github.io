@@ -1,28 +1,29 @@
+<!-- Setting Document Type to html -->
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Defining Website root title, character set and referncing the css stylesheet -->
   <meta charset="UTF-8">
   <title>Lone Starfish Midterm - Home</title>
   <link href="css/main.css" rel="stylesheet">
 </head>
-<!-- Start of Webpage Text -->
+<!-- Start of Webpage Body -->
 <body>
   <header>
     <!-- Title of Page -->
-    <h1>Lone Starfish</h1>
+    <h1 class="text-offset">Lone Starfish</h1>
     <!-- Adding Navigation -->
     <nav>
       <ul>
         <li>
-          <a href="index.html">HOME</a>
+          <!--  Hyperlinking each navigation tab, applying CSS Class -->
+          <a href="index.html" class="black-link">HOME</a>
         </li>
         <li>
-          <a href="#story">STORY</a>
+          <a href="#story" class="black-link">STORY</a>
         </li>
         <li>
-          <a href="#contact">CONTACT</a>
+          <a href="#contact" class="black-link">CONTACT</a>
         </li>
       </ul>
     </nav>
@@ -30,7 +31,7 @@
   <!-- Starting main article of text -->
   <main>
     <!-- Article Header -->
-    <h2>Life of a Starfish</h2>
+    <h2 id="story">Life of a Starfish</h2>
     <!-- Adding Image -->
     <img src="images/lone-starfish.jpg" alt="A Lone Starfish" class="image">
     <!-- Article Content -->
@@ -38,14 +39,55 @@
     <!-- Facts Header -->
     <h3>Facts About Starfish</h3>
     <!-- Unordered List for Facts -->
-    <ul>
+    <ul class="fact-list">
       <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
       <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
       <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
       <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
     </ul>
     <!-- Header for Contact Box -->
-    <h3>Contact to learn more</h3>
-
+    <h3 id="contact">Contact to learn more</h3>
+    <!-- Creating a form so the user can submit information -->
+    <form action="thanks.html" method="get" id="contact-box">
+      <!-- Each line of the form needs its own "div" tag -->
+      <div>
+        <!-- Creating Labels and Inputs for name, email and a message, with proper class and id tags where required -->
+        <label for="yourname" class="submit-label">Your Name</label>
+      </div>
+      <div>
+        <input type="text" id="yourname" name="yourname" class="white-border" class="long-width" required>
+      </div>
+      <div>
+        <label for="youremail" class="submit-label">Your Email</label>
+      </div>
+      <div>
+        <input type="email" id="youremail" name="youremail" class="white-border" class="long-width" required>
+      </div>
+      <div>
+        <label for="yourmessage" class="submit-label">Your Message</label>
+      </div>
+      <div>
+        <input type="message" name="yourmessage" id="yourmessage" class="long-width" required>
+      </div>
+      <div>
+        <!-- Creating a header for the radio buttons -->
+        <h4>Would you like to visit the starfish?</h4>
+      </div>
+      <div>
+        <!-- Adding Yes, no and maybe radio buttons -->
+        <label for="yes">Yes</label>
+        <input type="radio" name="yes" id="visit">
+        <label for="no">No</label>
+        <input type="radio" name="no" id="visit">
+        <label for="maybe">Maybe</label>
+        <input type="radio" name="maybe" id="visit">
+      </div>
+      <button type="submit" id="button-submit">SEND</button>
+    </form>
   </main>
+  <!-- Adding a footer to the site -->
+  <footer>
+    <!-- HTML Entity for the copyright symbol -->
+    &copy; Lone Starfish.
+  </footer>
 </body>
