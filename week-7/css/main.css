@@ -130,3 +130,6 @@ Selecting only the p directly inside the article
   [target="_blank"] {
     text-transform: uppercase;
   }
+  footer {
+    text-align: center;
+  }
