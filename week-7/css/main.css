@@ -1,0 +1,132 @@
+/* html {
+  border: 1px solid red;
+}
+
+* {
+  border: inherit;
+}
+
+nav {
+  border-color: blue;
+}
+h1:before {
+  content: "HH";
+} */
+
+/* using the body selector, we can style the properties with declarations */
+body {
+  color: rgb(50, 50, 50);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', sans-serif;
+}
+
+/* Header Colouring and Underlining */
+h1, h2, h3 {
+  text-decoration: underline;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+/* Background colouring */
+p {
+  background-color: greenyellow;
+}
+
+table {
+  border: 1px solid grey;
+}
+
+/* Selecting child elements */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 49%;
+  padding: 1em;
+  text-align: center;
+
+  box-sizing: border-box;
+  border-right: 3px solid white;
+}
+
+nav ul li:last-child {
+  border: none;
+}
+
+/* Selecting child elements on multiple levels, more levels means more specificity */
+nav ul a {
+  display: block;
+  color: darkslategrey;
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+
+/* Selecting HTML element using class name (Recommended for specificity)*/
+.orange-link {
+  padding: 1.5em;
+  width: 300px;
+  display: block;
+  background-color: darkslategrey;
+  color: orange;
+  text-decoration: none;
+}
+
+/* Creating a two column layout using the float tag */
+article, 
+aside{
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid black;
+  padding: 1.5em;
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+}
+
+aside{
+  width: 20%;
+}
+
+section{
+  clear: both;
+}
+/* Making the images take 80 percent width of the parent element */
+img{
+  width: 80%;
+}
+/* Stop the container at a max width and center on the page */
+main{
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* Selecting the HTML element using id value (Not recommended as its more specific than classes) */
+#tow {
+  background: orange;
+}
+
+.large-text {
+  font-size: 20px;
+}
+/* Child selector or Direct Child selector
+Selecting only the p directly inside the article
+ */
+ article>p {
+   font-size: 24px;
+ }
+ /* Adjacent Sibling Selector
+ Selecting only the ul that is adjacent to an h3
+  */
+  h3+ul {
+    border: 1px solid black
+  }
+  /* Attribute selector */
+  [href="#tow"] {
+    font-weight: bold;
+  }
+  [target="_blank"] {
+    text-transform: uppercase;
+  }
