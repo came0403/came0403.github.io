@@ -52,9 +52,107 @@ Marigold colour = EFA00B
 
 */
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
 }
-img {
-	display: block;
-	width: 100%;
+h1 {
+	font-size: 72px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 32px;
+	font-weight: bold;
+}
+h4 {
+	font-size: 24px;
+}
+h5 {
+	font-weight: bold;
+}
+header {
+	background-color: #202020;
+	color: white;
+}
+a, 
+a:link, 
+a:visited
+{
+	text-decoration: none;
+	color: #EFA00B;
+}
+nav {
+	padding: 15px;
+	font-size: 16px;
+}
+nav ul li {
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: auto;
+}
+nav ul .blackfont {
+	color: #202020;
+}
+.orgbkg {
+	background-color: #EFA00B;
+}
+.logo{
+	text-align: left;
+}
+.submit{
+	display: grid;
+	grid-template-columns: 15fr 1fr;
+}
+#search{
+	height: 28px;
+}
+nav ul li form div button {
+	color: #EFA00B;
+	background-color: #202020;
+	border: 1px solid #EFA00B;
+	font-size: 20px;
+	padding: none;
+}
+.header {
+	background-image: url(../images/main-banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.header-container {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 75px;
+	padding-bottom: 1px;
+}
+.headertext {
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+.orangebutton {
+	color: #202020;
+	padding: 30px;
+	background-color: #EFA00B;
+	margin: 16px;
+	width: 30%;
+}
+.container1 {
+	background-color: tan;
+	padding: 10px;
+	width: auto;
+}
+.img2 {
+	max-width: 100%;
+}
+#aboutus {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.container1 div p {
+	padding-bottom: 10px;
 }
