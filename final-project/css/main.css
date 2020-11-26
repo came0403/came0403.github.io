@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.25;
 }
 ol, ul {
 	list-style: none;
@@ -53,39 +53,44 @@ Marigold colour = EFA00B
 */
 html {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 }
 h1 {
 	font-size: 72px;
 	font-weight: bold;
 }
 h2 {
-	font-size: 40px;
+	font-size: 48px;
 	font-weight: bold;
 }
 h3 {
 	font-size: 32px;
 	font-weight: bold;
+	padding-bottom: 10px;
+	padding-top: 10px
 }
 h4 {
 	font-size: 24px;
 }
 h5 {
 	font-weight: bold;
+	border-bottom: 2px solid #EFA00B;
+	margin-top: -15px;
+	margin-bottom: 15px;
 }
 header {
 	background-color: #202020;
 	color: white;
 }
-a, 
-a:link, 
-a:visited
+nav a, 
+nav a:link, 
+nav a:visited
 {
 	text-decoration: none;
 	color: #EFA00B;
 }
 nav {
-	padding: 15px;
+	padding: 10px;
 	font-size: 16px;
 }
 nav ul li {
@@ -98,6 +103,9 @@ nav ul .blackfont {
 	color: #202020;
 }
 .orgbkg {
+	background-color: #EFA00B;
+}
+.orgbkg2 {
 	background-color: #EFA00B;
 }
 .logo{
@@ -139,12 +147,18 @@ nav ul li form div button {
 	padding: 30px;
 	background-color: #EFA00B;
 	margin: 16px;
-	width: 30%;
+	display: inline-block;
+}
+.container {
+	width: auto;
+	padding: 10px;
+	margin: 0 auto;
 }
 .container1 {
-	background-color: tan;
+	background-color: #E0D68A;
 	padding: 10px;
 	width: auto;
+	margin-bottom: 15px;
 }
 .img2 {
 	max-width: 100%;
@@ -155,4 +169,236 @@ nav ul li form div button {
 }
 .container1 div p {
 	padding-bottom: 10px;
+}
+.grid1 {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .5fr 5fr 5fr 5fr 5fr 5fr;
+}
+.service {
+	background-color: #E0D68A;
+	margin-top: 10px;
+}
+.servicetext {
+	padding: 10px;
+}
+.serviceimg {
+	width: 100%;
+	height: auto;
+}
+.blackbutton {
+	color: white;
+	background-color: black;
+	display: inline-block;
+	padding: 30px;
+	margin-top: 15px;
+}
+.vision {
+	background-image: url(../images/vision.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+.container2 {
+	color: white;
+	padding-left: 10px;
+}
+.bluebutton {
+	display: inline-block;
+	padding: 25px;
+	margin-top: 15px;
+	margin-bottom: -5px;
+	background-color: #0A2342;
+	border: 1px solid #EFA00B;
+}
+.grid2 {
+	display: grid;
+	margin-top: 15px;
+}
+.teamtext {
+	background-color: #E0D68A;
+	margin-top: -10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.grid3 {
+	display: grid;
+	margin-top: 20px;
+	padding-right: 10px;
+	width: auto;
+}
+.submission {
+	width: 100%;
+	margin-bottom: 5px;
+	height: 2em;
+}
+#message {
+	height: 120px;
+}
+.blackbutton2 {
+	color: #EFA00B;
+	background-color: #202020;
+	font-size: 20px;
+	border: none;
+	padding: 5px;
+}
+table {
+	border: 1px solid black;
+	width: 100%;
+}
+thead {
+	background-color: #E0D68A;
+}
+tbody {
+	text-align: left;
+}
+th {
+	padding: 10px;
+	border: 1px solid black;
+}
+iframe {
+	width: 100%;
+}
+footer {
+	background-color: #202020;
+	color: #EFA00B;
+	line-height: 1.5;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+footer div a:link,
+footer div a:visited {
+	color: #EFA00B;
+}
+/* DESKTOP STYLING */
+@media screen and (min-width: 900px){
+	.container{
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		margin: 0 15% 0 15%;
+	}
+	nav ul li {
+		width: 25%;
+		padding: 15px auto;
+	}
+	.logo {
+		width: 250px;
+	}
+	.orgbkg {
+		background-color: #202020;	
+	}
+	.blackfont {
+		background: #EFA00B;
+	}
+	.header-container {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	.container5 {
+		display: grid;
+		max-width: 70%;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
+	}
+	.e2 {
+		margin: -30px 0 0 10px;
+		font-size: 14px;
+	}
+	.grid1 {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: .3fr 3fr 2.7fr;
+		grid-template-areas: 
+			"serviceheader serviceheader serviceheader serviceheader serviceheader serviceheader"
+			"digital digital digital marketing marketing marketing"
+			"video video web web print print";
+	}
+	.service {
+		margin: 10px 10px 0 0;
+	}
+	.serviceheader {
+		grid-area: serviceheader;
+	}
+	.digital {
+		grid-area: digital;
+	}
+	.marketing {
+		grid-area: marketing;
+	}
+	.video {
+		grid-area: video;
+	}
+	.web {
+		grid-area: web;
+	}
+	.print {
+		grid-area: print;
+	}
+	.blackbutton {
+		display: block;
+		text-align: center;
+	}
+	.container2 {
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	.grid2 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: .2fr 1fr 1fr;
+		grid-template-areas: 
+			"title title"
+			"johnpic john"
+			"bob bobpic";
+	}
+	.f1 {
+		grid-area: title;
+	}
+	.f2 {
+		grid-area: johnpic;
+	}
+	.f3 {
+		grid-area: john;
+		margin: 0 auto;
+	}
+	.f4 {
+		grid-area: bobpic;
+		margin: -5px 0 0 0;
+	}
+	.f5 {
+		grid-area: bob;
+		margin: -5px 0 10px 0;
+	}
+	.grid3 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 5fr 2fr;
+		grid-template-areas:
+			"title title"
+			"message location"
+			"hours hours";
+	}
+	.c1 {
+		grid-area: title;
+	}
+	.c2 {
+		grid-area: message;
+		padding-right: 20px;
+	}
+	.c3 {
+		grid-area: hours;
+	}
+	.c4 {
+		grid-area: location;
+		width: 100%;
+	}
 }
