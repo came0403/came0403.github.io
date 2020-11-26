@@ -316,7 +316,7 @@ footer div a:visited {
 	.grid1 {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: .3fr 3fr 2.7fr;
+		grid-template-rows: 1fr auto;
 		grid-template-areas: 
 			"serviceheader serviceheader serviceheader serviceheader serviceheader serviceheader"
 			"digital digital digital marketing marketing marketing"
@@ -354,7 +354,7 @@ footer div a:visited {
 	.grid2 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: .2fr 1fr 1fr;
+		grid-template-rows: 1fr auto;
 		grid-template-areas: 
 			"title title"
 			"johnpic john"
@@ -376,12 +376,12 @@ footer div a:visited {
 	}
 	.f5 {
 		grid-area: bob;
-		margin: -5px 0 10px 0;
+		margin: -5px 0 4px 0;
 	}
 	.grid3 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 5fr 2fr;
+		grid-template-rows: 1fr auto;
 		grid-template-areas:
 			"title title"
 			"message location"
