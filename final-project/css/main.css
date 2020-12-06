@@ -51,8 +51,9 @@ table {
 Marigold colour = EFA00B
 
 */
+/* Defining font choice and sizing for doc and headers */
 html {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
 h1 {
@@ -78,17 +79,20 @@ h5 {
 	margin-top: -15px;
 	margin-bottom: 15px;
 }
+/* Adding black background and text colour to header */
 header {
-	background-color: #202020;
+	background-color: #222;
 	color: white;
 }
+/* Removing decoration on nav link text */
 nav a, 
 nav a:link, 
 nav a:visited
 {
 	text-decoration: none;
-	color: #EFA00B;
+	color: #c78c06;
 }
+/* Customizing nav styles */
 nav {
 	padding: 10px;
 	font-size: 16px;
@@ -103,14 +107,15 @@ nav ul .blackfont {
 	color: #202020;
 }
 .orgbkg {
-	background-color: #EFA00B;
+	background-color: #c78c06;
 }
 .orgbkg2 {
-	background-color: #EFA00B;
+	background-color: #c78c06;
 }
 .logo{
 	text-align: left;
 }
+/* Grid for the submit line and button, to keep them properly connected */
 .submit{
 	display: grid;
 	grid-template-columns: 15fr 1fr;
@@ -119,12 +124,13 @@ nav ul .blackfont {
 	height: 28px;
 }
 nav ul li form div button {
-	color: #EFA00B;
-	background-color: #202020;
-	border: 1px solid #EFA00B;
+	color: #c78c06;
+	background-color: #222;
+	border: 1px solid #c78c06;
 	font-size: 20px;
 	padding: none;
 }
+/* Adding background image to header, modifying styles */
 .header {
 	background-image: url(../images/main-banner.jpg);
 	background-repeat: no-repeat;
@@ -145,15 +151,17 @@ nav ul li form div button {
 .orangebutton {
 	color: #202020;
 	padding: 30px;
-	background-color: #EFA00B;
+	background-color: #c78c06;
 	margin: 16px;
 	display: inline-block;
 }
+/* Adding 10px padding to entire body */
 .container {
 	width: auto;
 	padding: 10px;
 	margin: 0 auto;
 }
+/* Setting background colour for content, adding spacing */
 .container1 {
 	background-color: #E0D68A;
 	padding: 10px;
@@ -170,6 +178,7 @@ nav ul li form div button {
 .container1 div p {
 	padding-bottom: 10px;
 }
+/* Defining first grid for the services */
 .grid1 {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -188,11 +197,12 @@ nav ul li form div button {
 }
 .blackbutton {
 	color: white;
-	background-color: black;
+	background-color: #222;
 	display: inline-block;
 	padding: 30px;
 	margin-top: 15px;
 }
+/* Adding stretched our vision image */
 .vision {
 	background-image: url(../images/vision.jpg);
 	background-repeat: no-repeat;
@@ -212,8 +222,9 @@ nav ul li form div button {
 	margin-top: 15px;
 	margin-bottom: -5px;
 	background-color: #0A2342;
-	border: 1px solid #EFA00B;
+	border: 1px solid #c78c06;
 }
+/* Adding second grid for 'Our Team' */
 .grid2 {
 	display: grid;
 	margin-top: 15px;
@@ -224,6 +235,7 @@ nav ul li form div button {
 	margin-bottom: 10px;
 	padding: 10px;
 }
+/* Adding final grid for the contact and embedded map */
 .grid3 {
 	display: grid;
 	margin-top: 20px;
@@ -239,14 +251,15 @@ nav ul li form div button {
 	height: 120px;
 }
 .blackbutton2 {
-	color: #EFA00B;
-	background-color: #202020;
+	color: #c78c06;
+	background-color: #222;
 	font-size: 20px;
 	border: none;
 	padding: 5px;
 }
+/* Creating table for hours of operation */
 table {
-	border: 1px solid black;
+	border: 1px solid #222;
 	width: 100%;
 }
 thead {
@@ -257,34 +270,39 @@ tbody {
 }
 th {
 	padding: 10px;
-	border: 1px solid black;
+	border: 1px solid #222;
 }
 iframe {
 	width: 100%;
 }
+/* Footer styles */
 footer {
-	background-color: #202020;
-	color: #EFA00B;
+	background-color: #222;
+	color: #c78c06;
 	line-height: 1.5;
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
+/* Removing partial styles for Unsplash link */
 footer div a:link,
 footer div a:visited {
-	color: #EFA00B;
+	color: #c78c06;
 }
 /* DESKTOP STYLING */
-@media screen and (min-width: 900px){
+@media screen and (min-width: 760px){
+	/* Defining max content width and centering*/
 	.container{
-		max-width: 70%;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
+	/* Adding flexbox for nav to stretch it horizontally */
 	nav ul {
+		max-width: 1200px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
-		margin: 0 15% 0 15%;
+		margin: 0 auto;
 	}
 	nav ul li {
 		width: 25%;
@@ -293,19 +311,21 @@ footer div a:visited {
 	.logo {
 		width: 250px;
 	}
+	/* Changing home button colouring */
 	.orgbkg {
-		background-color: #202020;	
+		background-color: #222;	
 	}
 	.blackfont {
-		background: #EFA00B;
+		background: #c78c06;
 	}
 	.header-container {
-		max-width: 70%;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
+	/* Using grid functionality to split About Us into dual column */
 	.container5 {
 		display: grid;
-		max-width: 70%;
+		max-width: 1200px;
 		grid-template-columns: 1fr 1fr;
 		margin: 0 auto;
 	}
@@ -313,6 +333,7 @@ footer div a:visited {
 		margin: -30px 0 0 10px;
 		font-size: 14px;
 	}
+	/* Creating Grid template area for services desktop layout */
 	.grid1 {
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
@@ -348,9 +369,10 @@ footer div a:visited {
 		text-align: center;
 	}
 	.container2 {
-		max-width: 70%;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
+	/* Creating grid template area for Our Team desktop layout */
 	.grid2 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -378,6 +400,7 @@ footer div a:visited {
 		grid-area: bob;
 		margin: -5px 0 4px 0;
 	}
+	/* Creating grid template area for Contact and Map section desktop layout */
 	.grid3 {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
