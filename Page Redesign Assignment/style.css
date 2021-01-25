@@ -1,0 +1,49 @@
+html {
+  background-color: grey;
+}
+
+#nav.nav {
+  max-width: 1200px;
+  width: auto;
+  background-color: orange;
+  border: 3px solid black
+}
+#main.main {
+  background-color: orange;
+  border: 3px solid black;
+  border-top: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: 
+  "home about"
+  "contact about";
+}
+#home.home {
+  padding: 20px;
+  grid-area: home;
+  font-size: 24px;
+}
+#about.about {
+  padding: 20px;
+  grid-area: about;
+  font-size: 24px;
+}
+#contact.contact {
+  padding: 20px;
+  grid-area: contact;
+  font-size: 24px;
+}
+#about .about-image {
+  float: right;
+  width: 200px;
+}
+#nav.nav .nav-link {
+  color: black;
+}
+
+#home.home, #about.about, #contact.contact, #contact .contact-form {
+  background-color: orange;
+  color: black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
