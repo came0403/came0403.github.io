@@ -1,3 +1,4 @@
+<!-- HTML Base Code -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,7 @@
 </head>
 <body>
   <main>
+    <!-- Navigation for website -->
     <nav>
       <ul class="margin">
         <li>
@@ -28,6 +30,7 @@
         </li>
       </ul>
     </nav>
+    <!-- First section contains header, subheaders in a div, and the header image outside the div for better grid support-->
     <section class="margin about1">
       <div class="about1text">
         <h1>What to expect during construction.</h1>
@@ -36,9 +39,11 @@
       </div>
       <img src="images/construction.svg" alt="Construction">
     </section>
+    <!-- Seperate div for the about background to bypass margin css code -->
     <div class="about-header">
       <h1 class="about-header-text">About</h1>
     </div>
+    <!-- Second section contains 3 divs, one for each paragraph and header for easy grid functionality -->
     <section class="margin about2">
       <div class="whotext gridspace">
         <h2 class="fancyh2">Who</h2>
@@ -53,9 +58,11 @@
         <p>will the ARC building be? The ARC building will be located northeast of the Student Commons building, opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student Commons by a "Plus 15" Pedestrian Link. </p>
       </div>
     </section>
+    <!-- Similar to the about header, extra div to bypass margin css code -->
     <div class="services-header">
       <h1 class="services-header-text">Services</h1>
     </div>
+    <!-- Third section contains the services content, two images and two text blocks with extra divs for easy grid functionality -->
     <section class="margin">
       <div class="about3">
         <img src="images/bar.jpg" alt="Bar" class="hiddenimg barimg gridspace2">
@@ -73,6 +80,7 @@
       </div>
     </section>
   </main>
+  <!-- Footer content, identical to home page -->
   <footer>
     <div class="socialbox">
       <h4 class="whitetext">Follow us</h4>

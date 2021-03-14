@@ -1,3 +1,4 @@
+<!-- HTML Base Code -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@
 <body>
   <main>
     <nav>
+      <!-- Identical navigation to first two pages -->
       <ul class="margin">
         <li>
           <img src="images/logo.svg" alt="Logo" class="logo">
@@ -28,12 +30,15 @@
         </li>
       </ul>
     </nav>
+    <!-- One sections surrounds all the content except the navigation, for an easy grid layout on the desktop style -->
     <section class="contactgrid">
+      <!-- First content section contains the header, subheader and image -->
       <section class="margin contact1">
         <h1>We Want to Hear From You</h1>
         <h5>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</h5>
         <img src="images/contact-img.svg" alt="Contact Icons" class="contactimg">
       </section>
+      <!-- Section section contains the entire contact form, no extra div needed -->
       <section class="margin contact-form-section">
         <h1 class="formh1">Contact us.</h1>
         <form class="contact-form">
@@ -54,10 +59,12 @@
             <input type="text" class="textarea" placeholder="Message">
           </div>
         </form>
+        <!-- Additional div for button, similar to home page, for better flex support -->
         <div class="flextest">
           <button class="blackbutton">Submit</button>
         </div>
       </section>
+      <!-- Third section contains the text information on location and contact info -->
       <section class="margin location">
         <h1>Our Location.</h1>
         <h4 class="blackh4">Algonquin College Student's Association</h4>
@@ -67,11 +74,13 @@
           K2G 1V8 <br>
           (613) 727-4723 x7711</p>
       </section>
+      <!-- Fourth section/div for better map grid support and margin control -->
       <div class="mapimg">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3943712705022!2d-75.75931356072785!3d45.349675223869546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce071f17e68ba5%3A0xd53c37d8ec33d850!2sAlgonquin%20Students&#39;%20Association!5e0!3m2!1sen!2sca!4v1615426497744!5m2!1sen!2sca" width="100%" height="250px" style="border:0;" allowfullscreen="false" loading="lazy"></iframe>
       </div>
     </section>
   </main>
+  <!-- Identical footer to first two pages -->
   <footer class="contactfooter">
     <div class="socialbox">
       <h4 class="whitetext">Follow us</h4>

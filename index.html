@@ -1,3 +1,4 @@
+<!-- HTML Base Code -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,7 @@
 </head>
 <body>
   <main>
+    <!-- Navigation for website -->
     <nav>
       <ul class="margin">
         <li>
@@ -28,10 +30,12 @@
         </li>
       </ul>
     </nav>
+    <!-- Split First Section contains the header and subheader, a div for the icons, the button and the reading image -->
     <section class="margin discover1">
       <h1 class="title1">Discover Your ARC.</h1>
       <h5 class="subtitle1">With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</h5>
       <div class="sports">
+        <!-- Each icon has its own div for the text below it to remain insync -->
         <div class="sportsinner bowling">
           <i class="fas fa-bowling-ball"></i>
           <p class="greentext">Bowling</p>
@@ -52,18 +56,23 @@
       <button class="greenbutton stretch">Get Started</button>
       <img src="images/discover.svg" alt="Discover" class="learningimg">
     </section>
+    <!-- Second section, extra div is added for adjusted layout on desktop style -->
     <div class="desktopdiscover">
+      <!-- School banner image placed outside section to bypass margin code -->
       <img src="images/school.jpg" alt="School" class="schoolimg">
       <section class="margin discover2">
         <h3>Discover.</h3>
         <h4>Algonquin College</h4>
         <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec and Upstate New York.</p>
+        <!-- Additional div added for better flexbox support of the Learn More button -->
         <div class="flextest">
           <button class="greenbutton minibutton">Learn More</button>
         </div>
       </section>
     </div>
+    <!-- Third section for information on the SA president, their picture, and a mission statement -->
     <section class="president">
+      <!-- Additional div for alternate layouts on tablet and desktop styling -->
       <div class="margin margin2 prezgrid">
         <img src="images/simon.jpg" alt="Simon" class="simonimg">
         <h4 class="whitetext whiteh4 simonname">Dijanelle Simon</h4>
@@ -72,9 +81,12 @@
       </div>
     </section>
   </main>
+  <!-- Footer code begins -->
   <footer>
+    <!-- Div for the footer content to leave the "back to top" icon seperate -->
     <div class="socialbox">
       <h4 class="whitetext">Follow us</h4>
+      <!-- Additional div for social icon flexing -->
       <div class="socials">
         <img src="icons/facebook.svg" alt="Facebook">
         <img src="icons/instagram.svg" alt="Instagram">
@@ -82,6 +94,7 @@
         <img src="icons/youtube.svg" alt="Youtube">
       </div>
     </div>
+    <!-- Referred to "back to top" icon code -->
     <div class="return">
       <a href="index.html"><img src="icons/arrow.svg" alt="ArrowUp" class="arrow"></a>
       <p class="smalltext">back to top</p>

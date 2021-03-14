@@ -1,3 +1,4 @@
+/* Setting base colours for webpages */
 :root {
   --green: #26A682;
   --blue: #5DA9E9;
@@ -5,6 +6,7 @@
   --white: #F2F2F2;
   --grey: #3C3B3A;
 }
+/* Setting font, text colour, base margins on all sides and padding on all sides */
 body {
   font-family: 'Raleway', sans-serif;
   color: var(--grey);
@@ -14,10 +16,12 @@ body {
   margin-right: 0px;
   padding: 0;
 }
+/* Proper image optimization base code */
 img {
   display: block;
   max-width: 100%;
 }
+/* Navigation styles including colour, removing text emphasis and positional adjustments */
 nav {
   background-color: var(--grey);
 }
@@ -29,17 +33,21 @@ li {
   font-size: 18px;
   padding-bottom: 25px;
 }
+/* Bypassing display:block for the ARC logo for easier navigation display */
 .logo {
   display: initial;
   width: 25%;
 }
+/* Removing link-state effects */
 a, a:hover, a:visited {
   text-decoration: none;
   color: var(--white);
 }
+/* Setting global margins on the margin class */
 .margin {
   margin: 0 5%;
 }
+/* Font Sizes and Emphasis */
 h1 {
   font-size: 40px;
   font-weight: bold;
@@ -66,6 +74,7 @@ h5 {
 p {
   line-height: 2;
 }
+/* Displaying sport icons in grid for mobile state */
 .sports {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -91,10 +100,12 @@ i.fas {
   transform: translateX(10px);
   transition: transform 2s;
 }
+/* Subheader font colouring */
 .greentext {
   font-size: 17px;
   color: var(--green);
 }
+/* Base Styles for all green buttons */
 .greenbutton {
   background-color: var(--green);
   border: none;
@@ -123,6 +134,7 @@ i.fas {
     transform: scale(1);
   }
 }
+/* Additonal margin control and colouring */
 .learningimg {
   margin-top: 50px
 }
@@ -151,6 +163,7 @@ i.fas {
   font-weight: bold;
   text-align: center;
 }
+/* Base footer styles */
 footer {
   background-color: var(--grey);
   margin-top: -30px;
@@ -166,6 +179,7 @@ footer {
 .socialbox {
   grid-area: socials;
 }
+/* Making social icons into a flex box for easy positioning */
 .socials {
   display: flex;
   justify-content: space-between;
@@ -185,6 +199,7 @@ footer {
   margin-top: -5px;
 }
 /* ABOUT PAGE SPECIFIC STYLES */
+/* Applying green colouring over the background image through CSS code */
 .about-header {
   background:linear-gradient(0deg, rgba(38, 166, 130, 0.5), rgba(38, 166, 130, 0.5)), url(../images/about.jpg);
   background-position: center;
@@ -200,6 +215,7 @@ footer {
 .fancyh2 {
   font-style: italic;
 }
+/* Same colouring as previous header, with new image */
 .services-header {
   background:linear-gradient(0deg, rgba(38, 166, 130, 0.5), rgba(38, 166, 130, 0.5)), url(../images/services.jpg);
   background-position: center;
@@ -212,6 +228,7 @@ footer {
   text-align: center;
   padding-top: 100px;
 }
+/* Hiding services images for mobile styling*/
 .hiddenimg {
   display: none;
 }
@@ -219,6 +236,7 @@ footer {
   margin-bottom: 50px;
 }
 /* CONTACT PAGE SPECIFIC STYLES */
+/* Creating contact form */
 .contact-form-section {
   background-color: var(--green);
   border: none;
@@ -251,6 +269,7 @@ input {
   padding-bottom: 75px;
   margin-bottom: 20px;
 }
+/* Base styling for black buttons on webpages */
 .blackbutton {
   background-color: var(--grey);
   border: none;
@@ -271,6 +290,7 @@ input {
 }
 /* MEDIA QUERY FOR TABLET */
 @media screen and (min-width: 760px) {
+  /* Adjusting navigation to become horizontal instead of vertical, also converting to flex for easier positioning */
   ul {
     padding-top: 50px;
     padding-bottom: 10px;
@@ -278,17 +298,20 @@ input {
     flex-direction: row;
     justify-content: space-evenly;
   }
+  /* Reverting logo to block display for easier placement */
   .logo {
     display: block;
     width: 100%;
     margin: -40px -30px -30px;
   }
+  /* Font resizing for new media query */
   h1 {
     font-size: 72px;
   }
   h5 {
     font-size: 24px;
   }
+  /* Readjusting layout of the sport icons */
   .sports {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -301,6 +324,7 @@ input {
     width: 50%;
     margin: 50px auto;
   }
+  /* Applying cover fit to better represent the image */
   .schoolimg {
     object-fit: cover;
     object-position: 35% 65%;
@@ -310,6 +334,7 @@ input {
   .minibutton {
     margin: 0;
   }
+  /* Turning presidential section into a grid for easier placement of information and layout */
   .prezgrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -337,19 +362,23 @@ input {
     font-size: 24px;
     line-height: 1.5;
   }
+  /* Modifying the spacing of the social icons */
   .socials {
     width: 50%;
   }
   /* TABLET ABOUT STYLES */
+  /* Modifying the location of the header text */
   .about-header-text {
     padding-top: 75px;
   }
   .services-header-text {
     padding-top: 75px;
   }
+  /* Unhiding the images hidden in the mobile stylings */
   .hiddenimg {
     display: initial;
   }
+  /* Converting third section into a grid for better layout */
   .about3 {
     margin-top: 50px;
     display: grid;
@@ -380,6 +409,7 @@ input {
     height: 280px;
   }
   /* CONTACT TABLET STYLES */
+  /* Margin and font adjustments */
   label {
     font-size: 18px;
   }
@@ -390,6 +420,7 @@ input {
   .blackbutton {
     width: 30%;
   }
+  /* Applying flex properties to certain buttons for better display */
   .flextest {
     display: flex;
     flex-direction: row-reverse;
@@ -398,12 +429,14 @@ input {
     margin-top: -50px;
     font-size: 40px;
   }
+  /* Changing the map dimensions */
   iframe {
     height: 500px;
   }
 }
 /* MEDIA QUERY FOR DESKTOP STYLES */
 @media screen and (min-width: 1266px) {
+  /* Applying navigation to the ul in the nav, just as a precaution and applying new flex value to the nav */
   ul {
     display: flex;
     justify-content: flex-start;
@@ -411,6 +444,7 @@ input {
   li {
     margin: 0 20px;
   }
+  /* Converting first home section to a grid for better desktop display */
   .discover1 {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -440,6 +474,7 @@ input {
   .greenbutton {
     margin: 0;
   }
+  /* Converting second section to a grid to re-margin the discover image */
   .desktopdiscover {
     margin: -100px 10% 0;
     display: grid;
@@ -451,6 +486,7 @@ input {
     height: 337px;
     width: 813px;
   }
+  /* Modifying the layout of the presidential grid */
   .prezgrid {
     grid-template-columns: 1fr 1fr 3fr;
     grid-template-rows: 1fr;
@@ -471,6 +507,7 @@ input {
   .simontext {
     grid-area: text;
   }
+  /* Adjusting social icon spacing and back to top arrow location */
   .socials {
     width: 25%;
   }
@@ -478,6 +515,7 @@ input {
     margin-left: 80%;
   }
   /* DESKTOP ABOUT STYLES */
+  /* Converting first section into a grid for better desktop display */
   .about1 {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -485,14 +523,17 @@ input {
     margin-top: 50px;
     margin-bottom: 100px;
   }
+  /* Converting second section into a grid for better desktop display */
   .about2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  /* Adding additional spacing code for within grids */
   .gridspace {
     padding-left: 20px;
     padding-right: 20px;
   }
+  /* Converting third section to a grid for better desktop display, using additional rows and columns for better spacing */
   .about3 {
     grid-template-columns: 1fr 0.05fr 1fr;
     grid-template-rows: 1fr 0.2fr 1fr;
@@ -502,6 +543,7 @@ input {
     "comp . bowl";
   }
   /* DESKTOP CONTACT STYLES */
+  /* Converting entire page into a singular grid, aside from navigation and footer */
   .contactgrid {
     display: grid;
     grid-template-columns: 1fr .2fr 1fr;
@@ -525,6 +567,7 @@ input {
     grid-area: location;
     margin-top: -75px;
   }
+  /* Added additional div for better map embed display */
   .mapimg {
     grid-area: map;
     width: 90%;
