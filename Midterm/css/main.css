@@ -447,8 +447,8 @@ input {
   /* Converting first home section to a grid for better desktop display */
   .discover1 {
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr;
     grid-template-areas: 
     "title pic"
     "subtitle pic"
