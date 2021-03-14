@@ -38,7 +38,7 @@ a, a:hover, a:visited {
   color: var(--white);
 }
 .margin {
-  margin: 5%;
+  margin: 0 5%;
 }
 h1 {
   font-size: 40px;
@@ -78,6 +78,19 @@ i.fas {
   font-size: 40px;
   color: var(--grey);
 }
+/* Animations for Sport Icons */
+.fa-bowling-ball:hover, .fa-basketball-ball:hover {
+  transform: rotate(360deg);
+  transition: transform 2s;
+}
+.fa-dumbbell:hover {
+  transform: translateY(-10px);
+  transition: transform 2s;
+}
+.fa-hiking:hover {
+  transform: translateX(10px);
+  transition: transform 2s;
+}
 .greentext {
   font-size: 17px;
   color: var(--green);
@@ -94,19 +107,35 @@ i.fas {
   height: 50px;
   box-shadow: 0px 10px 10px grey;
 }
+/* Animating the Get Started Button using keyframes */
+.stretch {
+  animation-name: stretch;
+  animation-duration: 1.5s;
+}
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .learningimg {
   margin-top: 50px
 }
-.discover2 {
-  overflow: hidden;
-}
 .minibutton {
-  float: right;
   width: 50%;
-  margin-bottom: 20px;
+  margin: 0 50%;
 }
 .president {
   background-color: var(--grey);
+}
+.margin2 {
+  margin-top: 30px;
+  padding-top: 20px;
 }
 .simonimg {
   max-width: 50%;
@@ -166,7 +195,7 @@ footer {
 .about-header-text {
   color: var(--white);
   text-align: center;
-  padding-top: 20%;
+  padding-top: 100px;
 }
 .fancyh2 {
   font-style: italic;
@@ -181,7 +210,7 @@ footer {
 .services-header-text {
   color: var(--white);
   text-align: center;
-  padding-top: 20%;
+  padding-top: 100px;
 }
 .hiddenimg {
   display: none;
@@ -239,4 +268,266 @@ input {
 }
 .contactfooter {
   margin-top: -5px;
+}
+/* MEDIA QUERY FOR TABLET */
+@media screen and (min-width: 760px) {
+  ul {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .logo {
+    display: block;
+    width: 100%;
+    margin: -40px -30px -30px;
+  }
+  h1 {
+    font-size: 72px;
+  }
+  h5 {
+    font-size: 24px;
+  }
+  .sports {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .greenbutton {
+    max-width: 35%;
+    margin: 0 33%;
+  }
+  .learningimg {
+    width: 50%;
+    margin: 50px auto;
+  }
+  .schoolimg {
+    object-fit: cover;
+    object-position: 35% 65%;
+    height: 150px;
+    width: 100%;
+  }
+  .minibutton {
+    margin: 0;
+  }
+  .prezgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "pic text"
+    "name text";
+  }
+  .simonimg {
+    grid-area: pic;
+    margin-top: 50px;
+    margin-bottom: -100px;
+  }
+  .simonname {
+    grid-area: name;
+  }
+  .simontitle {
+    grid-area: name;
+    padding-top: 80px;
+  }
+  .simontext {
+    grid-area: text;
+  }
+  .whitetext {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .socials {
+    width: 50%;
+  }
+  /* TABLET ABOUT STYLES */
+  .about-header-text {
+    padding-top: 75px;
+  }
+  .services-header-text {
+    padding-top: 75px;
+  }
+  .hiddenimg {
+    display: initial;
+  }
+  .about3 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-template-areas: 
+    "bar break break"
+    ". . ."
+    "comp comp bowl";
+  }
+  .barimg {
+    grid-area: bar;
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+  }
+  .breaktext {
+    grid-area: break;
+    margin: -30px 0 0 20px;
+  }
+  .competetext {
+    grid-area: comp;
+  }
+  .bowlimg {
+    grid-area: bowl;
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+  }
+  /* CONTACT TABLET STYLES */
+  label {
+    font-size: 18px;
+  }
+  input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .blackbutton {
+    width: 30%;
+  }
+  .flextest {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .blackh4 {
+    margin-top: -50px;
+    font-size: 40px;
+  }
+  iframe {
+    height: 500px;
+  }
+}
+/* MEDIA QUERY FOR DESKTOP STYLES */
+@media screen and (min-width: 1266px) {
+  ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+  li {
+    margin: 0 20px;
+  }
+  .discover1 {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-areas: 
+    "title pic"
+    "subtitle pic"
+    "sports pic"
+    "button pic";
+  }
+  .title1 {
+    grid-area: title;
+  }
+  .subtitle1 {
+    grid-area: subtitle;
+  }
+  .sports {
+    grid-area: sports;
+  }
+  .stretch {
+    grid-area: button;
+  }
+  .learningimg {
+    grid-area: pic;
+    width: 100%;
+  }
+  .greenbutton {
+    margin: 0;
+  }
+  .desktopdiscover {
+    margin: -100px 10% 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .schoolimg {
+    object-position: initial;
+    height: 337px;
+    width: 813px;
+  }
+  .prezgrid {
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "pic title text";
+    margin-bottom: 20px;
+  }
+  .simonimg {
+    grid-area: pic;
+    margin-top: 0;
+  }
+  .simonname {
+    grid-area: title;
+  }
+  .simontitle {
+    grid-area: title;
+  }
+  .simontext {
+    grid-area: text;
+  }
+  .socials {
+    width: 25%;
+  }
+  .return {
+    margin-left: 80%;
+  }
+  /* DESKTOP ABOUT STYLES */
+  .about1 {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .about2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gridspace {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about3 {
+    grid-template-columns: 1fr 0.05fr 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr;
+    grid-template-areas: 
+    "bar . break"
+    ". . ."
+    "comp . bowl";
+  }
+  /* DESKTOP CONTACT STYLES */
+  .contactgrid {
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr;
+    grid-template-rows: 1fr 0.1fr 0.65fr;
+    grid-template-areas: 
+    "title title form"
+    ". . ."
+    "location map map";
+    margin-top: 100px;
+  }
+  .contact1 {
+    grid-area: title;
+    margin-top: -100px;
+  }
+  .contact-form-section {
+    grid-area: form;
+    width: 70%;
+    margin-bottom: 120px;
+  }
+  .location {
+    grid-area: location;
+    margin-top: -75px;
+  }
+  .mapimg {
+    grid-area: map;
+    width: 90%;
+    margin: -50px auto 50px;
+  }
 }
