@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <title>Bootstrap This!</title>
+  </head>
+  <body class="bg-primary">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container-lg container-fluid">
+        <a class="navbar-brand" href="#">Navigation</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationcontent" aria-controls="navigationcontent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigationcontent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="https://getbootstrap.com/docs/5.0/components/navbar/"> Navbar Information</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-lg bg-light">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center display-2">Information on Bootstrap</h1>
+          <br>
+          <p class="h5">Bootstrap is a toolkit designed for use with HTML5, that allows for styling using html classes, rather than large css style sheets. The base of the kit is derived from Sass and Javascript, running on a responsive grid-12 system, and has a massive database of built-in components to use.</p>
+          <p class="h5">One of the simplest components to use is the Button, as displayed below. You can disabled them, change their colour and text, their alignment and so much more!</p>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <button class="btn btn-info col-12"><a href="https://getbootstrap.com/" class="link-light text-decoration-none">Learn More!</a></button>
+        </div>
+        <div class="col-12 ms-md-auto col-md-4 col-lg-3">
+          <button class="btn btn-info disabled col-12"><a href="https://getbootstrap.com/" class="link-light text-decoration-none">This button is disabled</a></button>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <p>Another commonly used component, is the Alert Box, which has specialized colour contrast settings and is used to notify the user of the response to action, such as it being completed, failed, an error occuring, or something else! Here is an example of a "danger" alert below.</p>
+        </div>
+        <div class="col-12 ms-md-auto col-md-4 col-lg-3">
+          <p class="alert alert-danger text-center">This is an example of an Alert Box!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <p>One of the components that takes advantage of the built in Javascript in Bootstrap is the Modal. It is essentially a pop-up that can include text, buttons, dropdowns and other components of bootstrap, but appears to be elevated off the page and can fade the background behind it to draw the focus of the viewer. Click the button below to view an example of a modal with some customized buttons and text.</p>
+        </div>
+        <div class="col-12 ms-md-auto col-md-4 col-lg-3">
+          <!-- Button to launch Modal -->
+          <button type="button" class="btn btn-info text-white col-12" data-bs-toggle="modal" data-bs-target="#Modal1">
+            Modal Example
+          </button>
+          <!-- Modal -->
+          <div class="modal" id="Modal1" tabindex="-1" aria-labelledby="Modal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="Modal1Label">The Modal title would go here!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Here is an example of a Modal, pretty cool eh?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Accept Changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-6">
+          <p>The last component I will showcase here is the card. it is a simple block element that can house text, pictures, or other components. They are useful for creating isolated "blocks" on your page that can easily group together pictures, text and components in a neat looking way. Here is an example of a card with a picture and some text!</p>
+        </div>
+        <div class="col-12 ms-md-auto col-md-6 col-lg-4">
+          <div class="card ms-md-auto" style="width: 18rem">
+            <img src="../Midterm/images/bar.jpg" alt="">
+            <div class="card-body">
+              <p class="card-text">Here is an example of a card, with an image</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col">
+          <p>Hopefully this information is very useful, and if you wish to learn more, you can click <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="text-decoration-none">here</a> or click the "Learn More" button near the top of the page!</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-lg">
+        <p class="display-6 text-white">&copy; EvnEssnce 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>
