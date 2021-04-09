@@ -1,0 +1,26 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.background-main {
+  background-color: #400101;
+}
+.full {
+  width: 100%;
+}
+.bg-orange {
+  background-color: #d9731a;
+}
+.bg-darkorange {
+  background-color: #bf3a0a;
+}
+.extended {
+  height: 100px;
+}
+.btn-orange {
+  background-color: #d9731a;
+  width: 20%;
+}
