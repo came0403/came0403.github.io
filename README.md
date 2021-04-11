@@ -1,7 +1,6 @@
 Fonts from https://fonts.google.com/
 Any Icons used from https://fontawesome.com/
-All images taken from "Overwatch Contenders" have been granted permission from the required teams at Blizzard including Team 4
-The "Elo Hell Esports" logo has been granted permission from the art department at Elo Hell (this is the company I work for)
+All images taken of the "Overwatch Contenders" and the "Elo Hell Esports" logo has been granted permission from the art department at Elo Hell (this is the company I work for) Proof is in the images folder "LogoPermission.png"
 All other images were hand designed by myself or Chloe Wheatley as commission for a seperate use.
 Framework of Bootstrap imported from https://getbootstrap.com/
 
